@@ -11,7 +11,26 @@ public class PlayerStats : MonoBehaviour
 
     public double playerWoodPerClick = 1;
 
+    //Wood Price
+    public double woodPrice = 1;
 
+    //UPGRADE IDS
+    public int upgradeID1 = 0;
+    public int upgradeID2 = 0;
+    public int upgradeID3 = 0;
+    public int upgradeID4 = 0;
+    public int upgradeID5 = 0;
+    public int upgradeID6 = 0;
+    public int upgradeID7 = 0;
+    public int upgradeID8 = 0;
+    public int upgradeID9 = 0;
+    public int upgradeID10 = 0;
+    public int upgradeID11 = 0;
+    public int upgradeID12 = 0;
+    public int upgradeID13 = 0;
+    public int upgradeID14 = 0;
+    public int upgradeID15 = 0;
+    public int upgradeID16 = 0;
 
     private void Awake()
     {

@@ -63,6 +63,8 @@ struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
 struct ITextPreprocessor_tDBB49C8B68D7B80E8D233B9D9666C43981EFAAB9;
 struct LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A;
+struct LoadSceneNumber_t940EAF00EC048C0F7A07ECA0D93290CE6F435D19;
+struct MarketSellScript_t76D4C1E905C701C8F46ED6A742A6BCF9ADC86574;
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
@@ -90,6 +92,7 @@ struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
 struct TreeClickScript_t86A46C95547FA9C9189DB49C7884174268E2849D;
 struct UIDocument_t4186BEBCC01278F63B895274AA08AD9ADFBF4C77;
+struct UIUpgradeTab_t4303A416FD13EC5E8F63E3DC9B7A659C78CE362F;
 struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
 struct UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E;
 struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
@@ -108,8 +111,9 @@ IL2CPP_EXTERN_C RuntimeClass* Physics2D_t64C0DB5246067DAC2E83A52558A0AC68AF3BE94
 IL2CPP_EXTERN_C RuntimeClass* PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5B6DEAAFB96325A6DBB682A133CAD76A8D5FEF6ED17D36509863EA43DD1AA5C9_FieldInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____ECA056B91484D705FE569A75BAE5754795317688B44F8A548CBFBA3EAD750B9F_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____3BD47833BC9C72587151D688E45EB95F37EFAF9D3FFDBBFB879323384D8726CC_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____D0B5B144A6345887D680D74E939F6C72AA3EDCFEC5B23172CEF727FCE02D4473_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral834788E2CB29BC322B8F73CB43AE35C7C799C73B;
 IL2CPP_EXTERN_C String_t* _stringLiteralE1CD00BE49FE42EC6802C70003C118FC668B10BC;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m60A1B193FDBBFB3719065622DB5E0BB21CA4ABDC_RuntimeMethod_var;
@@ -424,7 +428,7 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D117_tA0891327514C4E31C0A7C581AB8B9265BC2B7830 
+struct __StaticArrayInitTypeSizeU3D178_tCEC17A3A5F8BB4602591F4D75CF3A8D02496EB32 
 {
 	union
 	{
@@ -434,12 +438,12 @@ struct __StaticArrayInitTypeSizeU3D117_tA0891327514C4E31C0A7C581AB8B9265BC2B7830
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D117_tA0891327514C4E31C0A7C581AB8B9265BC2B7830__padding[117];
+		uint8_t __StaticArrayInitTypeSizeU3D178_tCEC17A3A5F8BB4602591F4D75CF3A8D02496EB32__padding[178];
 	};
 };
 #pragma pack(pop, tp)
 #pragma pack(push, tp, 1)
-struct __StaticArrayInitTypeSizeU3D254_t3B50BB8CA3EB121B0370C7791B23658A4B8B48B5 
+struct __StaticArrayInitTypeSizeU3D387_tF9E35AAD1394800B16E5A3295DAACB482AF5D9C8 
 {
 	union
 	{
@@ -449,7 +453,7 @@ struct __StaticArrayInitTypeSizeU3D254_t3B50BB8CA3EB121B0370C7791B23658A4B8B48B5
 			{
 			};
 		};
-		uint8_t __StaticArrayInitTypeSizeU3D254_t3B50BB8CA3EB121B0370C7791B23658A4B8B48B5__padding[254];
+		uint8_t __StaticArrayInitTypeSizeU3D387_tF9E35AAD1394800B16E5A3295DAACB482AF5D9C8__padding[387];
 	};
 };
 #pragma pack(pop, tp)
@@ -1081,11 +1085,37 @@ struct GUIPlayerValuesScript_tFDA6C44B65DAE23D272B5736DDB8FA34E4CB1713  : public
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___WoodText;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___CoinsText;
 };
+struct LoadSceneNumber_t940EAF00EC048C0F7A07ECA0D93290CE6F435D19  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	int32_t ___sceneNumber;
+};
+struct MarketSellScript_t76D4C1E905C701C8F46ED6A742A6BCF9ADC86574  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___WoodPrice;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___CoinsSum;
+};
 struct PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	double ___playerWood;
 	double ___playerCoins;
 	double ___playerWoodPerClick;
+	double ___woodPrice;
+	int32_t ___upgradeID1;
+	int32_t ___upgradeID2;
+	int32_t ___upgradeID3;
+	int32_t ___upgradeID4;
+	int32_t ___upgradeID5;
+	int32_t ___upgradeID6;
+	int32_t ___upgradeID7;
+	int32_t ___upgradeID8;
+	int32_t ___upgradeID9;
+	int32_t ___upgradeID10;
+	int32_t ___upgradeID11;
+	int32_t ___upgradeID12;
+	int32_t ___upgradeID13;
+	int32_t ___upgradeID14;
+	int32_t ___upgradeID15;
+	int32_t ___upgradeID16;
 };
 struct SpriteClickScript_t93699B330313B3E5802F9BB36C41B4E35A84DB60  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1099,6 +1129,11 @@ struct TreeClickScript_t86A46C95547FA9C9189DB49C7884174268E2849D  : public MonoB
 };
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+};
+struct UIUpgradeTab_t4303A416FD13EC5E8F63E3DC9B7A659C78CE362F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___QuantityTab;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___PriceTab;
 };
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
 {
@@ -1406,8 +1441,8 @@ struct TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957  : public TMP_T
 };
 struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
 {
-	__StaticArrayInitTypeSizeU3D117_tA0891327514C4E31C0A7C581AB8B9265BC2B7830 ___5B6DEAAFB96325A6DBB682A133CAD76A8D5FEF6ED17D36509863EA43DD1AA5C9;
-	__StaticArrayInitTypeSizeU3D254_t3B50BB8CA3EB121B0370C7791B23658A4B8B48B5 ___ECA056B91484D705FE569A75BAE5754795317688B44F8A548CBFBA3EAD750B9F;
+	__StaticArrayInitTypeSizeU3D387_tF9E35AAD1394800B16E5A3295DAACB482AF5D9C8 ___3BD47833BC9C72587151D688E45EB95F37EFAF9D3FFDBBFB879323384D8726CC;
+	__StaticArrayInitTypeSizeU3D178_tCEC17A3A5F8BB4602591F4D75CF3A8D02496EB32 ___D0B5B144A6345887D680D74E939F6C72AA3EDCFEC5B23172CEF727FCE02D4473;
 };
 struct String_t_StaticFields
 {
@@ -1567,10 +1602,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_width_mF608FF3252213E7EFA1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_height_m01A3102DE71EE1FBEA51D09D6B0261CF864FE8F9 (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Camera_ScreenToWorldPoint_m5EA3148F070985EC72127AAC3448D8D6ABE6E7E5 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C (const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats_AddPlayerWoodClick_m9448CAFF6A311C8287A77B2592E89D51577DF835 (PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, const RuntimeMethod* method)
 {
@@ -1579,15 +1611,19 @@ inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_m064F2A066491D2DC4FFCFBDBE5FCFFB807A04436 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, float ___1_t, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Double_ToString_m7499A5D792419537DCB9470A3675CEF5117DE339 (double* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1 (int32_t ___0_sceneBuildIndex, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_DontDestroyOnLoad_m4B70C3AEF886C176543D1295507B6455C9DCAEA7 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_target, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetMouseButtonDown_m8DFC792D15FFF15D311614D5CC6C5D055E5A1DE3 (int32_t ___0_button, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* Physics2D_OverlapPoint_mA63A2BD632AACFB5C5F1DF950D8F1A3F268B023D (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_point, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteClickScript_SpawnParticle_m9E660BA33DC563E96AED9DCCE3A3448671DBEAAF (SpriteClickScript_t93699B330313B3E5802F9BB36C41B4E35A84DB60* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_touchPos, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Selectable_Awake_m55439376D9E09A622C61C4BD7DA413E1E0EFD469 (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) ;
@@ -1621,7 +1657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Button__ctor_m0A1FC265F589989085C1909BC8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 69896
+// Method Definition Index: 69890
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TreeClickScript_Start_m156C24D72B6DCED2DBC9B66C74A97E847BF5FA9B (TreeClickScript_t86A46C95547FA9C9189DB49C7884174268E2849D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1629,7 +1665,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TreeClickScript_Start_m156C24D72B6DCED2D
 		return;
 	}
 }
-// Method Definition Index: 69897
+// Method Definition Index: 69891
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TreeClickScript_SpawnParticle_mF3BFA1A02D6FE4DF899F12E8EABB66DCB7D7BE72 (TreeClickScript_t86A46C95547FA9C9189DB49C7884174268E2849D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1640,7 +1676,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TreeClickScript_SpawnParticle_mF3BFA1A02
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/ClickTreeScript.cs:18>
@@ -1659,6 +1695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TreeClickScript_SpawnParticle_mF3BFA1A02
 		NullCheck(L_2);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		V_0 = L_3;
 		goto IL_0041;
 	}
 
@@ -1677,37 +1714,30 @@ IL_001c:
 		NullCheck(L_4);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
 		L_8 = Camera_ScreenToWorldPoint_m5EA3148F070985EC72127AAC3448D8D6ABE6E7E5(L_4, L_7, NULL);
+		V_0 = L_8;
 	}
 
 IL_0041:
 	{
 		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/ClickTreeScript.cs:27>
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
-		L_9 = Input_get_mousePosition_mFF21FBD2647DAE2A23BD4C45571CA95D05A0A42C(NULL);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_10;
-		L_10 = Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline(L_9, NULL);
-		V_0 = L_10;
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_9 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
+		NullCheck(L_9);
+		PlayerStats_AddPlayerWoodClick_m9448CAFF6A311C8287A77B2592E89D51577DF835(L_9, NULL);
 		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/ClickTreeScript.cs:28>
-		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_11 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
-		NullCheck(L_11);
-		PlayerStats_AddPlayerWoodClick_m9448CAFF6A311C8287A77B2592E89D51577DF835(L_11, NULL);
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/ClickTreeScript.cs:29>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___particlePrefab;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_13 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
-		L_14 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_13, NULL);
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_15;
-		L_15 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___particlePrefab;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = V_0;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_12;
+		L_12 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16;
-		L_16 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_12, L_14, L_15, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
+		L_13 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_10, L_11, L_12, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/ClickTreeScript.cs:29>
+		Object_Destroy_m064F2A066491D2DC4FFCFBDBE5FCFFB807A04436(L_13, (2.0f), NULL);
 		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/ClickTreeScript.cs:30>
-		Object_Destroy_m064F2A066491D2DC4FFCFBDBE5FCFFB807A04436(L_16, (2.0f), NULL);
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/ClickTreeScript.cs:31>
 		return;
 	}
 }
-// Method Definition Index: 69898
+// Method Definition Index: 69892
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TreeClickScript__ctor_mCE2C187EEFFB3A4BFBC568313E986BBC6653B820 (TreeClickScript_t86A46C95547FA9C9189DB49C7884174268E2849D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1723,7 +1753,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TreeClickScript__ctor_mCE2C187EEFFB3A4BF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 69899
+// Method Definition Index: 69893
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIPlayerValuesScript_Start_m51640A878452D501DE106DB8C0A99A1B58F1BC4F (GUIPlayerValuesScript_tFDA6C44B65DAE23D272B5736DDB8FA34E4CB1713* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1731,7 +1761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIPlayerValuesScript_Start_m51640A87845
 		return;
 	}
 }
-// Method Definition Index: 69900
+// Method Definition Index: 69894
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIPlayerValuesScript_Update_m450F4201C563D3357409C720F314B0220A1A9FA2 (GUIPlayerValuesScript_tFDA6C44B65DAE23D272B5736DDB8FA34E4CB1713* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1763,7 +1793,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIPlayerValuesScript_Update_m450F4201C5
 		return;
 	}
 }
-// Method Definition Index: 69901
+// Method Definition Index: 69895
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIPlayerValuesScript__ctor_mEBDDB442B889F42594E205F8B9E504F8A58B9664 (GUIPlayerValuesScript_tFDA6C44B65DAE23D272B5736DDB8FA34E4CB1713* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1779,94 +1809,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GUIPlayerValuesScript__ctor_mEBDDB442B88
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 69902
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats_Awake_m058292BBEDE0A7A57B305AB0E7C60D459EA2A234 (PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* __this, const RuntimeMethod* method) 
+// Method Definition Index: 69896
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoadSceneNumber_OnClick_m8BC8AE1E3C04BB7DA3F729B6A7C52D3727C9A009 (LoadSceneNumber_t940EAF00EC048C0F7A07ECA0D93290CE6F435D19* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:19>
-		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_0 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_1;
-		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_1)
-		{
-			goto IL_001f;
-		}
-	}
-	{
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:21>
-		((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance), (void*)__this);
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:22>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
-		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_DontDestroyOnLoad_m4B70C3AEF886C176543D1295507B6455C9DCAEA7(L_2, NULL);
-		return;
-	}
-
-IL_001f:
-	{
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:26>
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
-		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_3, NULL);
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:30>
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/LoadSceneNumber.cs:10>
+		int32_t L_0 = __this->___sceneNumber;
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_m0957E62F2A0A0243C79394E5B74E8EFA86BE5ED1(L_0, NULL);
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/LoadSceneNumber.cs:12>
 		return;
 	}
 }
-// Method Definition Index: 69903
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats_AddPlayerWood_m650F61705E35E79AE0B0B4850C3B87C57FC62224 (PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* __this, int32_t ___0_wood, const RuntimeMethod* method) 
+// Method Definition Index: 69897
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LoadSceneNumber__ctor_m4613BC4531531BB2EF33F736865427EB8E408CFC (LoadSceneNumber_t940EAF00EC048C0F7A07ECA0D93290CE6F435D19* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:37>
-		int32_t L_0 = ___0_wood;
-		if ((((int32_t)L_0) > ((int32_t)0)))
-		{
-			goto IL_0005;
-		}
-	}
-	{
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:37>
-		return;
-	}
-
-IL_0005:
-	{
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:39>
-		double L_1 = __this->___playerWood;
-		int32_t L_2 = ___0_wood;
-		__this->___playerWood = ((double)il2cpp_codegen_add(L_1, ((double)L_2)));
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:41>
-		return;
-	}
-}
-// Method Definition Index: 69904
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats_AddPlayerWoodClick_m9448CAFF6A311C8287A77B2592E89D51577DF835 (PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:47>
-		double L_0 = __this->___playerWood;
-		double L_1 = __this->___playerWoodPerClick;
-		__this->___playerWood = ((double)il2cpp_codegen_add(L_0, L_1));
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:49>
-		return;
-	}
-}
-// Method Definition Index: 69905
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats__ctor_mACDFFF1D0051299DFCDC4AA2E9D29232D892B2EE (PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* __this, const RuntimeMethod* method) 
-{
-	{
-		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:12>
-		__this->___playerWoodPerClick = (1.0);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -1879,7 +1843,193 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats__ctor_mACDFFF1D0051299DFCDC4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 69906
+// Method Definition Index: 69898
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarketSellScript_Update_mA4B663CD69982E945E4986D239D43803E5582CA6 (MarketSellScript_t76D4C1E905C701C8F46ED6A742A6BCF9ADC86574* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	double V_0 = 0.0;
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/MarketSellScript.cs:10>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___WoodPrice;
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_1 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
+		NullCheck(L_1);
+		double* L_2 = (double*)(&L_1->___woodPrice);
+		String_t* L_3;
+		L_3 = Double_ToString_m7499A5D792419537DCB9470A3675CEF5117DE339(L_2, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, L_3);
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/MarketSellScript.cs:11>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_4 = __this->___CoinsSum;
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_5 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
+		NullCheck(L_5);
+		double L_6 = L_5->___playerWood;
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_7 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
+		NullCheck(L_7);
+		double L_8 = L_7->___woodPrice;
+		V_0 = ((double)il2cpp_codegen_multiply(L_6, L_8));
+		String_t* L_9;
+		L_9 = Double_ToString_m7499A5D792419537DCB9470A3675CEF5117DE339((&V_0), NULL);
+		NullCheck(L_4);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_4, L_9);
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/MarketSellScript.cs:12>
+		return;
+	}
+}
+// Method Definition Index: 69899
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarketSellScript_OnClick_mD7099E4B395C2364F2E4A401FC2450F1637518AA (MarketSellScript_t76D4C1E905C701C8F46ED6A742A6BCF9ADC86574* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/MarketSellScript.cs:17>
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_0 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_1 = L_0;
+		NullCheck(L_1);
+		double L_2 = L_1->___playerCoins;
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_3 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
+		NullCheck(L_3);
+		double L_4 = L_3->___woodPrice;
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_5 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
+		NullCheck(L_5);
+		double L_6 = L_5->___playerWood;
+		NullCheck(L_1);
+		L_1->___playerCoins = ((double)il2cpp_codegen_add(L_2, ((double)il2cpp_codegen_multiply(L_4, L_6))));
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/MarketSellScript.cs:18>
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_7 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
+		NullCheck(L_7);
+		L_7->___playerWood = (0.0);
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/MarketSellScript.cs:19>
+		return;
+	}
+}
+// Method Definition Index: 69900
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MarketSellScript__ctor_m16ADBCD8D91443CD6EBFB946DCB98CD9CA5CF7FF (MarketSellScript_t76D4C1E905C701C8F46ED6A742A6BCF9ADC86574* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 69901
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats_Awake_m058292BBEDE0A7A57B305AB0E7C60D459EA2A234 (PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:38>
+		PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* L_0 = ((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:40>
+		((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&((PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_StaticFields*)il2cpp_codegen_static_fields_for(PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8_il2cpp_TypeInfo_var))->___Instance), (void*)__this);
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:41>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_DontDestroyOnLoad_m4B70C3AEF886C176543D1295507B6455C9DCAEA7(L_2, NULL);
+		return;
+	}
+
+IL_001f:
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:45>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_3, NULL);
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:49>
+		return;
+	}
+}
+// Method Definition Index: 69902
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats_AddPlayerWood_m650F61705E35E79AE0B0B4850C3B87C57FC62224 (PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* __this, int32_t ___0_wood, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:56>
+		int32_t L_0 = ___0_wood;
+		if ((((int32_t)L_0) > ((int32_t)0)))
+		{
+			goto IL_0005;
+		}
+	}
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:56>
+		return;
+	}
+
+IL_0005:
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:58>
+		double L_1 = __this->___playerWood;
+		int32_t L_2 = ___0_wood;
+		__this->___playerWood = ((double)il2cpp_codegen_add(L_1, ((double)L_2)));
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:60>
+		return;
+	}
+}
+// Method Definition Index: 69903
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats_AddPlayerWoodClick_m9448CAFF6A311C8287A77B2592E89D51577DF835 (PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:66>
+		double L_0 = __this->___playerWood;
+		double L_1 = __this->___playerWoodPerClick;
+		__this->___playerWood = ((double)il2cpp_codegen_add(L_0, L_1));
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:68>
+		return;
+	}
+}
+// Method Definition Index: 69904
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerStats__ctor_mACDFFF1D0051299DFCDC4AA2E9D29232D892B2EE (PlayerStats_t342810FB47D12358A0FB28B541C79C5D04819BE8* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:12>
+		__this->___playerWoodPerClick = (1.0);
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/PlayerStatsScript.cs:15>
+		__this->___woodPrice = (1.0);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 69905
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteClickScript_Start_m270756F87DA1EAF6805D04788078C72B39BC92D7 (SpriteClickScript_t93699B330313B3E5802F9BB36C41B4E35A84DB60* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1892,7 +2042,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteClickScript_Start_m270756F87DA1EAF
 		return;
 	}
 }
-// Method Definition Index: 69907
+// Method Definition Index: 69906
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteClickScript_Update_m98441F65E126393B7FF3DB8A5984E7E90D4D0D69 (SpriteClickScript_t93699B330313B3E5802F9BB36C41B4E35A84DB60* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1973,7 +2123,7 @@ IL_0052:
 		return;
 	}
 }
-// Method Definition Index: 69908
+// Method Definition Index: 69907
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteClickScript_SpawnParticle_m9E660BA33DC563E96AED9DCCE3A3448671DBEAAF (SpriteClickScript_t93699B330313B3E5802F9BB36C41B4E35A84DB60* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_touchPos, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2020,7 +2170,7 @@ IL_0038:
 		return;
 	}
 }
-// Method Definition Index: 69909
+// Method Definition Index: 69908
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteClickScript__ctor_mF0803430A295CF9946EBF800C0E85218EB7EBB8B (SpriteClickScript_t93699B330313B3E5802F9BB36C41B4E35A84DB60* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2036,41 +2186,65 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SpriteClickScript__ctor_mF0803430A295CF9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 69909
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIUpgradeTab_Start_m6E5BB5269005569A88B80AA41E21FC75955C0D24 (UIUpgradeTab_t4303A416FD13EC5E8F63E3DC9B7A659C78CE362F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/andri/ClickerGame/Assets/Scripts/UIMarketRefreshScript.cs:19>
+		return;
+	}
+}
 // Method Definition Index: 69910
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIUpgradeTab__ctor_m5927B528A9010273A0E4B4F543110858E981FCA3 (UIUpgradeTab_t4303A416FD13EC5E8F63E3DC9B7A659C78CE362F* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 69911
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5B6DEAAFB96325A6DBB682A133CAD76A8D5FEF6ED17D36509863EA43DD1AA5C9_FieldInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____ECA056B91484D705FE569A75BAE5754795317688B44F8A548CBFBA3EAD750B9F_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____3BD47833BC9C72587151D688E45EB95F37EFAF9D3FFDBBFB879323384D8726CC_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____D0B5B144A6345887D680D74E939F6C72AA3EDCFEC5B23172CEF727FCE02D4473_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)254));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)387));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____ECA056B91484D705FE569A75BAE5754795317688B44F8A548CBFBA3EAD750B9F_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____3BD47833BC9C72587151D688E45EB95F37EFAF9D3FFDBBFB879323384D8726CC_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)117));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)178));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5B6DEAAFB96325A6DBB682A133CAD76A8D5FEF6ED17D36509863EA43DD1AA5C9_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____D0B5B144A6345887D680D74E939F6C72AA3EDCFEC5B23172CEF727FCE02D4473_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
-		(&V_0)->___TotalFiles = 5;
-		(&V_0)->___TotalTypes = 5;
+		(&V_0)->___TotalFiles = 8;
+		(&V_0)->___TotalTypes = 8;
 		(&V_0)->___IsEditorOnly = (bool)0;
 		MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E L_6 = V_0;
 		return L_6;
 	}
 }
-// Method Definition Index: 69911
+// Method Definition Index: 69912
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2156,7 +2330,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 69912
+// Method Definition Index: 69913
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton_Awake_m0466CD4064A650ECC408AAF501502C038274A722 (CustomButton_t9E4721F6FFB17B7B9BAB06434614D90482667924* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2186,7 +2360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton_Awake_m0466CD4064A650ECC408
 		return;
 	}
 }
-// Method Definition Index: 69913
+// Method Definition Index: 69914
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton_OnPointerDown_mBA26575982A4F1D33F3D2989BB4B4A6237A8EFD3 (CustomButton_t9E4721F6FFB17B7B9BAB06434614D90482667924* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -2201,7 +2375,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton_OnPointerDown_mBA26575982A4
 		return;
 	}
 }
-// Method Definition Index: 69914
+// Method Definition Index: 69915
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton_OnPointerUp_mBBEAE76644780F9B0B4FA9347B6CFA928624EA16 (CustomButton_t9E4721F6FFB17B7B9BAB06434614D90482667924* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	{
@@ -2216,7 +2390,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton_OnPointerUp_mBBEAE76644780F
 		return;
 	}
 }
-// Method Definition Index: 69915
+// Method Definition Index: 69916
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton_ApplyPressedVisual_m02BF6C6C215BFE5F72852E9AE6FF106A33F0008B (CustomButton_t9E4721F6FFB17B7B9BAB06434614D90482667924* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2272,7 +2446,7 @@ IL_0050:
 		return;
 	}
 }
-// Method Definition Index: 69916
+// Method Definition Index: 69917
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton_ApplyNormalVisual_m16D4E4ACFAB38987D2BCB355B9895278B3213716 (CustomButton_t9E4721F6FFB17B7B9BAB06434614D90482667924* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2306,7 +2480,7 @@ IL_001f:
 		return;
 	}
 }
-// Method Definition Index: 69917
+// Method Definition Index: 69918
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton_DoStateTransition_m6387DFC11BDB9566E02461C3237DFCACD6C6AAFB (CustomButton_t9E4721F6FFB17B7B9BAB06434614D90482667924* __this, int32_t ___0_state, bool ___1_instant, const RuntimeMethod* method) 
 {
 	{
@@ -2335,7 +2509,7 @@ IL_0013:
 		return;
 	}
 }
-// Method Definition Index: 69918
+// Method Definition Index: 69919
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomButton__ctor_mDF3804AE134C5A7ABD401D033FC704576A68C2D3 (CustomButton_t9E4721F6FFB17B7B9BAB06434614D90482667924* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2383,6 +2557,29 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999E
 		return;
 	}
 }
+// Method Definition Index: 37502
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = ((Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields*)il2cpp_codegen_static_fields_for(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var))->___identityQuaternion;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_1 = V_0;
+		return L_1;
+	}
+}
 // Method Definition Index: 37606
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Implicit_mE8EBEE9291F11BB02F062D6E000F4798968CBD96_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) 
 {
@@ -2427,29 +2624,6 @@ IL_001a:
 	{
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = V_0;
 		return L_5;
-	}
-}
-// Method Definition Index: 37502
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_0 = ((Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields*)il2cpp_codegen_static_fields_for(Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var))->___identityQuaternion;
-		V_0 = L_0;
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_1 = V_0;
-		return L_1;
 	}
 }
 // Method Definition Index: 36111
