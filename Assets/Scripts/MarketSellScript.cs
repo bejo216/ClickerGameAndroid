@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+
 public class MarketSellScript : MonoBehaviour
 {
     public TMP_Text WoodPrice;
@@ -7,14 +8,24 @@ public class MarketSellScript : MonoBehaviour
 
     void Update()
     {
-        WoodPrice.text = PlayerStats.Instance.woodPrice.ToString();
-        CoinsSum.text = (PlayerStats.Instance.playerWood * PlayerStats.Instance.woodPrice).ToString();
+        WoodPrice.text = "$" + PlayerStats.Instance.woodPrice.ToString("F1");
+        CoinsSum.text =  (PlayerStats.Instance.playerWood * PlayerStats.Instance.woodPrice).ToString("F1");
     }
 
     public void OnClick()
     {
+        if (PlayerStats.Instance.playerWood > 0)
+        {
+            
+            PlayerStats.Instance.playerCoins += PlayerStats.Instance.woodPrice * PlayerStats.Instance.playerWood;
+            PlayerStats.Instance.playerWood = 0;
+            SoundManager.Instance.PlayBuySound(); //sell price mora
+        }
+        else
+        {
+            SoundManager.Instance.PlayDeclineSound();
+        }
 
-        PlayerStats.Instance.playerCoins += PlayerStats.Instance.woodPrice * PlayerStats.Instance.playerWood;
-        PlayerStats.Instance.playerWood = 0;
+           
     }
 }

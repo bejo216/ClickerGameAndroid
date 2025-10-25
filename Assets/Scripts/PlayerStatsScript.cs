@@ -8,8 +8,10 @@ public class PlayerStats : MonoBehaviour
     //basic stats
     public double playerWood = 0;
     public double playerCoins = 0;
+    public double playerLuck = 0;
+    public float playerStrength = 1;
 
-    public double playerWoodPerClick = 1;
+    public double playerWoodPerClick = 0.1;
 
     //Wood Price
     public double woodPrice = 1;

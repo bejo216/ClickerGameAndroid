@@ -14,8 +14,8 @@ public class GUIPlayerValuesScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        WoodText.text = PlayerStats.Instance.playerWood.ToString();
-        CoinsText.text = PlayerStats.Instance.playerCoins.ToString();
+        WoodText.text = PlayerStats.Instance.playerWood.ToString("F1");
+        CoinsText.text = PlayerStats.Instance.playerCoins.ToString("F1");
     }
 
 
