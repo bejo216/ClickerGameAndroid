@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5695019fcbc7ff0408ff4725e3daa491, type: 3}
+  m_Name: 110
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  itemID: 110
+  itemName: Steel Chestplate
+  itemType: torso
+  itemIcon: {fileID: 3353146754260477109, guid: d4d26d3766c153145807e724bb1aec45, type: 3}
+  itemDescription: 
+  itemPower: 8200
+  itemPerSecond: 0
+  itemPerClick: 0

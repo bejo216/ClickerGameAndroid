@@ -1,0 +1,153 @@
+ItemID		Sprite		Name
+
+
+1	0.30		
+2	5
+3	10
+4	20
+5	40
+6	80
+7	160
+8	320
+9	640
+10	1,300
+11	2,600
+12	5,100
+13	10,200
+14	20,500
+15	41,000
+16	82,000
+17	165,000
+18	330,000
+19	655,000
+20	1,315,000
+
+
+
+
+
+tier 1 
+
+stick fc1468
+carving knife fc1444
+simple cleaver
+Aztec club fc1683
+simple machete fc1507
+simple axe
+simple Warhammer
+Obsidian Ax fc1695
+gold axe
+gold warhammer
+minotaur axe
+Babylon berserk axe fc1711
+axe of wild growth
+tungsten waraxe
+diamond axe
+fiery waraxe
+diamond warhammer
+purple gem axe
+kratos axe
+lightsaber fc1776
+
+
+
+
+
+
+
+
+
+| Tool | Tool # | Damage |
+| ------ | ------ |
+| 1      | 1      |
+| 2      | 2      |
+| 3      | 3      |
+| 4      | 5      |
+| 5      | 8      |
+| 6      | 13     |
+| 7      | 21     |
+| 8      | 34     |
+| 9      | 55     |
+| 10     | 89     |
+| 11     | 144    |
+| 12     | 233    |
+| 13     | 377    |
+| 14     | 610    |
+| 15     | 987    |
+| 16     | 1,597  |
+| 17     | 2,584  |
+| 18     | 4,181  |
+| 19     | 6,765  |
+| 20     | 10,946 |
+
+
+GREEN TUNIC
+Monk garnments
+kimono
+MERCHANT ROBE
+wizard garment
+LEATHER TUNIC
+hide gambeson
+bronze chestplate
+iron chestplate
+steel chestplate
+gold chestplate
+
+| Tool # | Damage |
+| ------ | ------ |
+| 2      | 4      |
+| 4      | 10     |
+| 6      | 26     |
+| 8      | 68     |
+| 10     | 178    |
+| 12     | 466    |
+| 14     | 1,220  |
+| 16     | 3,194  |
+| 18     | 8,362  |
+| 20     | 21,892 |
+
+
+
+Cow Hide Helmet-ima naziv ono medieval fc1956 *jesters hat
+magic hat fc1960
+bowler hat fc1965
+bronze helm fc1909
+steel helm fc1913 --okolo tu
+wizard top hat fc 2006
+forest hood fc1840
+
+
+
+
+
+
+
+
+
+
+
+arming cap
+bowler hat
+lovely top hat
+wizard top
+forest hood fc1840
+gold hood fc1836
+bronze helm fc1832
+metal mask
+steel helm 
+gold helm fc1918
+Sallet fc1910
+
+
+
+
+
+
+
+
+
+
+
+#556B2F -green
+#FE8B00 - orange
+#DC3132 - red

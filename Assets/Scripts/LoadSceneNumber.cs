@@ -3,11 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneNumber : MonoBehaviour
 {
-    public int sceneNumber;
+    public string sceneName;
     public void OnClick()
     {
         SoundManager.Instance.PlayClickSound();
-        SceneManager.LoadScene(sceneNumber); 
+        SceneManager.LoadScene(sceneName); 
 
     }
 }

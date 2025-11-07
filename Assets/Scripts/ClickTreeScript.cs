@@ -5,6 +5,8 @@ using System;
 
 public class TreeClickScript : MonoBehaviour
 {
+    public PlayerDataItemsController playerDataItemsController;
+
     // Assign via Inspector
     public Animator animator;
     public GameObject particlePrefab;           // The particle prefab to instantiate
@@ -35,8 +37,8 @@ public class TreeClickScript : MonoBehaviour
         }
         animator.Play("TreeClicked");
         SoundManager.Instance.PlayChop();
-        PlayerStats.Instance.AddPlayerWoodClick();
-        MainTreeSingleton.Instance.TakeDamage(PlayerStats.Instance.playerStrength);
+        PlayerData.Instance.playerWood += playerDataItemsController.getMainClickStat();
+        MainTreeSingleton.Instance.TakeDamage(playerDataItemsController.getMainPowerStat());
         //slider == currenthealth
         treeHealthSlider.value = MainTreeSingleton.Instance.treeCurrentHealth;
         healthText.text = MainTreeSingleton.Instance.treeCurrentHealth + "/" + MainTreeSingleton.Instance.treeMaxHealth;
