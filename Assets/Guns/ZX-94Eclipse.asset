@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48a4c8b1f333deb4d8df6fcaad51d2fe, type: 3}
+  m_Name: ZX-94Eclipse
+  m_EditorClassIdentifier: Assembly-CSharp::Gun
+  gunID: 10
+  gunName: ZX-94 Eclipse
+  gunBasePrice: 786
+  gunProductionCost: 1500000
+  gunType: SMG
+  gunFirerate: Semi-automatic
+  gunIcon: {fileID: 21300000, guid: 8d9bde0f797a6ab4487bd97eb3843fe5, type: 3}
+  gunDescription: 

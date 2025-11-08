@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afdb2057d581fa4aa9d6aa72a69798d, type: 3}
+  m_Name: GunDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::GunDatabase
+  guns:
+  - {fileID: 11400000, guid: f9d3c0797df668442afcf698bfa6b41e, type: 2}
+  - {fileID: 11400000, guid: 793dbc21a88b31743ac39459b50d4166, type: 2}
+  - {fileID: 11400000, guid: 4aa8d30614aa5564ca0cab55bc041896, type: 2}
+  - {fileID: 11400000, guid: c2ca3a8c7b309b44ca53d77b0f26b8ba, type: 2}
+  - {fileID: 11400000, guid: bc869d9898966664aa70c89e68eac2a9, type: 2}
+  - {fileID: 11400000, guid: acd010cb823b7c24d97cc9a39fb2a0dd, type: 2}
+  - {fileID: 11400000, guid: fef2a2c67fe6e1f43bd78e5f9ac50fa2, type: 2}
+  - {fileID: 11400000, guid: f41e071f685f5a740a558c20e2167067, type: 2}
+  - {fileID: 11400000, guid: 1d255a02263cea94cb7c520b1bee5377, type: 2}
+  - {fileID: 11400000, guid: 7c49893e0d69519458a8e3231d1cb8d5, type: 2}
+  - {fileID: 11400000, guid: ee4e6dcc26e6f1a40902eb3ccc8a21e2, type: 2}
+  - {fileID: 11400000, guid: 8050337871cd75b46bb179aab7fd35e8, type: 2}
+  - {fileID: 11400000, guid: a86bbc68062c6cc48a485c1396cbc0da, type: 2}
+  - {fileID: 11400000, guid: 9a44c169eae4cfc478b8f838036e5945, type: 2}
+  - {fileID: 11400000, guid: 5cf8f5fa4bbf86c48bf3cdfef8d3ae26, type: 2}
+  - {fileID: 11400000, guid: d4a73d39aed44ec459fc8bf4a173026b, type: 2}
+  - {fileID: 11400000, guid: c149a0f2bc138d5488909dbe68e35a69, type: 2}
+  - {fileID: 11400000, guid: eb03efbe81cabb444b432785eab64d68, type: 2}
+  - {fileID: 11400000, guid: 3f07766bd40b67e4b9fac2cb35e88db2, type: 2}
+  - {fileID: 11400000, guid: 38761561c797dc94c9a70ce89f86136c, type: 2}
