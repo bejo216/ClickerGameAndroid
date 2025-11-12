@@ -106,7 +106,6 @@ public class PlayerDataItemsController : MonoBehaviour
         number = 0.1f;
         number += GetEquippedClickBonus();
         number += GetEquippedClickBonus() * (float)PlayerData.Instance.playerPrestigeMultiplier;
-        number += GetEquippedClickBonus() * (float)PlayerData.Instance.playerClickingMultiplier;
         
         return number;
 

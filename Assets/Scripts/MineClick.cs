@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
-public class TreeClickScript : MonoBehaviour
+public class MineClick : MonoBehaviour
 {
     public PlayerDataItemsController playerDataItemsController;
 
@@ -14,16 +14,45 @@ public class TreeClickScript : MonoBehaviour
     
     public Slider treeHealthSlider;
     public TMP_Text healthText;
+
+
+
+    //Multiplier
+    
+    public Slider MultiplierSlider;
+    public TMP_Text multiplierText;
+
+    private float clickIncrease = 0.2f; // how much each click adds
+    private float decayRateBase = 0.005f; // base decay rate
+    private float decayRatePerLevel = 0.005f; // extra decay speed per multiplier level
+    private float multiplierMaxValue = 10f;
+    private float currentMultiplier = 0;
+    
     // Where to spawn the effect (optional)
     void Start()
     {
+        multiplierText.text = "x" + (currentMultiplier + 1f).ToString("F1");
+        InvokeRepeating(nameof(DecayMultiplier), 0.05f, 0.01f);
+
         treeHealthSlider.maxValue = MainTreeSingleton.Instance.treeMaxHealth;
         treeHealthSlider.value = MainTreeSingleton.Instance.treeCurrentHealth;
         healthText.text = MainTreeSingleton.Instance.treeCurrentHealth + "/" + MainTreeSingleton.Instance.treeMaxHealth;
     }
 
+    void Update()
+    {
+        multiplierText.text = "x" + (currentMultiplier + 1f).ToString("F1");
+        MultiplierSlider.maxValue = multiplierMaxValue;
+        MultiplierSlider.value = currentMultiplier;
+    }
+
     public void SpawnParticle()
     {
+
+
+        currentMultiplier += clickIncrease;
+
+
         Vector3 spawnPos;
 
         if (spawnTarget != null)
@@ -37,7 +66,9 @@ public class TreeClickScript : MonoBehaviour
         }
         animator.Play("TreeClicked");
         SoundManager.Instance.PlayChop();
-        PlayerData.Instance.playerWood += playerDataItemsController.getMainClickStat();
+        float value = playerDataItemsController.getMainClickStat() + (playerDataItemsController.getMainClickStat() * currentMultiplier);
+        float rounded = Mathf.Round(value * 10f) / 10f;
+        PlayerData.Instance.playerWood += rounded;
         MainTreeSingleton.Instance.TakeDamage(playerDataItemsController.getMainPowerStat());
         //slider == currenthealth
         treeHealthSlider.value = MainTreeSingleton.Instance.treeCurrentHealth;
@@ -55,5 +86,18 @@ public class TreeClickScript : MonoBehaviour
         }
         GameObject effect = Instantiate(particlePrefab, spawnPos, Quaternion.identity);
         Destroy(effect, 2f); // destroy after 2 seconds to clean up
+    }
+
+    void DecayMultiplier()
+    {
+            float decayRate = decayRateBase + (currentMultiplier * decayRatePerLevel);
+            currentMultiplier -= decayRate;
+
+            if (currentMultiplier < 0)
+            {
+                currentMultiplier = 0f;
+            }
+                
+        
     }
 }

@@ -1,25 +1,28 @@
 using UnityEngine;
-using TMPro;
 
 public class UIPopup : MonoBehaviour
 {
-    public TMP_Text Popup;
-    public float displayTime = 0.5f;
+    
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public float moveSpeed = 50f; // units per second
+    public float lifetime = 1f;
+
+    private RectTransform rectTransform;
+    private float timer;
+
+    void Awake()
     {
-        
+        rectTransform = GetComponent<RectTransform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
-    }
+        // Move upward in local UI space
+        rectTransform.anchoredPosition += Vector2.up * moveSpeed * Time.deltaTime;
 
-    public void OnClick(string text)
-    {
-        Popup.text = text;
+        // Lifetime timer
+        timer += Time.deltaTime;
+        if (timer >= lifetime)
+            Destroy(gameObject);
     }
 }
