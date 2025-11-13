@@ -4,25 +4,20 @@ public class UIPopup : MonoBehaviour
 {
     
 
-    public float moveSpeed = 50f; // units per second
-    public float lifetime = 1f;
-
-    private RectTransform rectTransform;
-    private float timer;
-
-    void Awake()
-    {
-        rectTransform = GetComponent<RectTransform>();
-    }
+     public float moveSpeed = 2f;  // how fast it moves up
+    public float lifetime = 1f;    // how long it stays
+    private float timer = 0f;
 
     void Update()
     {
-        // Move upward in local UI space
-        rectTransform.anchoredPosition += Vector2.up * moveSpeed * Time.deltaTime;
+        // Move the popup upwards
+        transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
 
-        // Lifetime timer
+        // Destroy after lifetime
         timer += Time.deltaTime;
         if (timer >= lifetime)
+        {
             Destroy(gameObject);
+        }
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
-
+using UnityEngine.EventSystems;
 public class MineClick : MonoBehaviour
 {
     public PlayerDataItemsController playerDataItemsController;
@@ -28,6 +28,9 @@ public class MineClick : MonoBehaviour
     private float multiplierMaxValue = 10f;
     private float currentMultiplier = 0;
     
+    //POPUP BRATE
+    public GameObject popupPrefab;
+    public Transform canvasTransform;
     // Where to spawn the effect (optional)
     void Start()
     {
@@ -46,8 +49,20 @@ public class MineClick : MonoBehaviour
         MultiplierSlider.value = currentMultiplier;
     }
 
-    public void SpawnParticle()
+    public void SpawnParticle(BaseEventData data)
     {
+
+        PointerEventData pointerData = data as PointerEventData;
+
+            Vector2 clickPosition = pointerData.position; // Screen position
+            Debug.Log("Button clicked at screen position: " + clickPosition);
+            Vector2 localPoint;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                canvasTransform as RectTransform,
+                clickPosition,           // your screen position
+                pointerData.pressEventCamera,
+                out localPoint
+            );            
 
 
         currentMultiplier += clickIncrease;
@@ -67,8 +82,20 @@ public class MineClick : MonoBehaviour
         animator.Play("TreeClicked");
         SoundManager.Instance.PlayChop();
         float value = playerDataItemsController.getMainClickStat() + (playerDataItemsController.getMainClickStat() * currentMultiplier);
-        float rounded = Mathf.Round(value * 10f) / 10f;
+        float rounded = Mathf.Floor(value * 10f) / 10f;
         PlayerData.Instance.playerWood += rounded;
+
+        GameObject popup = Instantiate(popupPrefab, clickPosition, Quaternion.identity, canvasTransform);
+        TMP_Text textComponent = popupPrefab.GetComponentInChildren<TMP_Text>();
+        
+        popup.transform.localPosition = localPoint;
+
+        if (textComponent != null)
+        {
+            textComponent.text = "+" + rounded.ToString("F1");
+        }
+           
+
         MainTreeSingleton.Instance.TakeDamage(playerDataItemsController.getMainPowerStat());
         //slider == currenthealth
         treeHealthSlider.value = MainTreeSingleton.Instance.treeCurrentHealth;
@@ -84,8 +111,11 @@ public class MineClick : MonoBehaviour
             treeHealthSlider.value = MainTreeSingleton.Instance.treeCurrentHealth;
             healthText.text = MainTreeSingleton.Instance.treeCurrentHealth + "/" + MainTreeSingleton.Instance.treeMaxHealth;
         }
-        GameObject effect = Instantiate(particlePrefab, spawnPos, Quaternion.identity);
-        Destroy(effect, 2f); // destroy after 2 seconds to clean up
+        //GameObject effect = Instantiate(particlePrefab, spawnPos, Quaternion.identity);
+        //Destroy(effect, 2f); // destroy after 2 seconds to clean up
+
+
+
     }
 
     void DecayMultiplier()
